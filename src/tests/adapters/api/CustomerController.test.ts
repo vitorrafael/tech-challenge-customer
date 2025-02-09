@@ -76,7 +76,7 @@ describe("Customer Controller", () => {
 
     expect(res.status).to.equal(400);
     expect(res.body).to.deep.equal({
-      error: new ResourceAlreadyExistsError(ResourceAlreadyExistsError.Resources.Customer, "cpf", customer.cpf).message
+      error: new ResourceAlreadyExistsError("cpf", customer.cpf).message
     });
     expect(findByPropertiesStub.calledOnce).to.be.true;
   });

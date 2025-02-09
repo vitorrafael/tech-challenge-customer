@@ -1,4 +1,4 @@
-const message = "Customer not found for &2 '&3'";
+const message = "Customer not found for &1 '&2'";
 
 export default class ResourceNotFoundError extends Error {
   constructor(attributeName: string, attributeValue: any) {

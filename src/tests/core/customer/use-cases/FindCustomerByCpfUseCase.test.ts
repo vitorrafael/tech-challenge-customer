@@ -1,4 +1,3 @@
-import MissingPropertyError from "../../../../core/common/exceptions/MissingPropertyError";
 import ResourceNotFoundError from "../../../../core/common/exceptions/ResourceNotFoundError";
 import FindCustomerByCpfUseCase from "../../../../core/customers/use-cases/FindCustomerByCpfUseCase";
 

@@ -61,12 +61,13 @@ Then("return the registered customer", function () {
 });
 
 Then("return message error equal {string}", function (messageExpected: string) {
-  assert.deepEqual(response.body.message, messageExpected);
+  assert.deepEqual(response.body.error, messageExpected);
 });
 
 When("search the customer by CPF {string}", async (cpf: string) => {
   findByPropertiesStub.resolves([customerCreated]);
   response = await request(app).get(`/customers/${cpf}`);
+  console.log(response.body);
 });
 
 When("search the customer by CPF {string} invalid", async (cpf: string) => {

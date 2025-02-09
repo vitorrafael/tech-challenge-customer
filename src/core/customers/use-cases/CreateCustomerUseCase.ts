@@ -18,7 +18,7 @@ export default class CreateCustomerUseCase implements CreateCustomer {
     const validateCustomerExistence = await this.customerGateway.findByCPF(cpf);
 
     if (validateCustomerExistence) {
-      throw new ResourceAlreadyExistsError(ResourceAlreadyExistsError.Resources.Customer, "cpf", cpf);
+      throw new ResourceAlreadyExistsError("cpf", cpf);
     }
   }
 }
