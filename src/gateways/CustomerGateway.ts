@@ -3,7 +3,7 @@ import CustomerGatewayInterface from "../core/interfaces/CustomerGateway";
 import CustomerDTO from "../core/customers/dto/CustomerDTO";
 
 export default class CustomerGateway implements CustomerGatewayInterface {
-  constructor(private dataSource: CustomerDataSource) {}
+  constructor(private readonly dataSource: CustomerDataSource) {}
 
   async create(customerDTO: CustomerDTO): Promise<CustomerDTO | undefined> {
     const createdCustomer = await this.dataSource.create(customerDTO);
