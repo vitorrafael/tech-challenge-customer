@@ -5,7 +5,7 @@ import CreateCustomer from "../interfaces/CreateCustomer";
 import CustomerMapper from "../mappers/CustomerMapper";
 
 export default class CreateCustomerUseCase implements CreateCustomer {
-  constructor(private customerGateway: CustomerGateway) {}
+  constructor(private readonly customerGateway: CustomerGateway) {}
 
   async create(customerDTO: CustomerDTO) {
     const customer = CustomerMapper.toCustomerEntity(customerDTO);

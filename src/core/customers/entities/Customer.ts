@@ -10,7 +10,7 @@ type CustomerParams = {
 };
 
 export default class Customer {
-  private id!: number | undefined;
+  private readonly id!: number | undefined;
   private name!: string;
   private cpf!: CPF;
   private email!: Email;

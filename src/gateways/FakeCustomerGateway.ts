@@ -9,7 +9,7 @@ type FakeCustomer = {
 };
 
 export default class FakeCustomerGateway implements CustomerGateway {
-  private customers: FakeCustomer[] = [];
+  private readonly customers: FakeCustomer[] = [];
 
   async create(customerDTO: CustomerDTO): Promise<CustomerDTO | undefined> {
     const { name, cpf, email } = customerDTO;

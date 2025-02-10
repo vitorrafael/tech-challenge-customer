@@ -4,7 +4,7 @@ import CustomerGateway from "../../interfaces/CustomerGateway";
 import FindCustomerByCpf from "../interfaces/FindCustomerByCpf";
 
 export default class FindCustomerByCpfUseCase implements FindCustomerByCpf {
-  constructor(private customerGateway: CustomerGateway) {}
+  constructor(private readonly customerGateway: CustomerGateway) {}
 
   async findByCPF(cpf: string) {
     if (!cpf) throw new MissingParameterError("cpf");
