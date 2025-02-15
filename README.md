@@ -39,7 +39,7 @@ Para parar a execução do projeto, pode ser executado Ctrl+C e em seguida o com
 
 #### Acessando as APIs
 
-Ao acessar a URL `http://localhost:8082/` (`docker compose`), você será redirecionado a documentação Swagger das APIs e poderá executar as requisições conforme documentado.
+Ao acessar a URL `http://localhost:8080/` (`docker compose`), você será redirecionado a documentação Swagger das APIs e poderá executar as requisições conforme documentado.
 
 #### Executando os testes
 
