@@ -1,4 +1,4 @@
-name: CI - Terraform Check & Plan
+name: CI - Microservice Build & Test
 
 on:
   push:
