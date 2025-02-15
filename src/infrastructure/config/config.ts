@@ -16,7 +16,7 @@ const config: { [key: string]: DatabaseConfig } = {
     password: process.env.DATABASE_PASSWORD!,
     database: process.env.DATABASE_DB!,
     host: process.env.DATABASE_HOST!,
-    dialect: process.env.DATABASE_DIALECT!,
+    dialect: process.env.DATABASE_DIALECT! as Dialect,
     port: Number(process.env.DATABASE_PORT)!
   }
 };
