@@ -12,7 +12,7 @@ configMapData:
 secret:
   enabled: true
   data:
-    DATABASE_PASSWORD: "TVRJek5EVTI="
+    DATABASE_PASSWORD: "MTIzNDU2"
 
 image:
   repository: "045628470274.dkr.ecr.us-east-1.amazonaws.com/tech-challenge-lanchonete/customer"
