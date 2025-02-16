@@ -3,5 +3,5 @@ variable "regionDefault" {
 }
 
 variable "repositoryName" {
-  default = "tech-challenge-lanchonete/lanchonete-api"
+  default = "tech-challenge-lanchonete/customer"
 }
